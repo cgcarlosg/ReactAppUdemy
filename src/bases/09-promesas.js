@@ -31,6 +31,6 @@ return new Promise((resolve, reject)=>{
 //return promesa;
 }
 
-getHeroeByIdAsync(1)
-.then( console.log)
-.catch (console.warn)
+//getHeroeByIdAsync(1)
+//.then( console.log)
+//.catch (console.warn)
