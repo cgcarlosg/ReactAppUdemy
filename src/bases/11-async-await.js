@@ -1,4 +1,4 @@
-const getImagen = async () => {
+export const getImagen = async () => {
 
     try {
 
@@ -8,13 +8,16 @@ const getImagen = async () => {
     console.log(data);
 
     const {url} = data.images.original;
-    const img = document.createElement('img');
-    img.src = url;
-  
-    document.body.appendChild(img);
+
+    return url;
+    
+//    const img = document.createElement('img');
+//    img.src = url;
+//    document.body.appendChild(img);
         
     } catch (error) {
-        console.error(error);
+//        console.error(error);
+return 'no existe';
     }
     
 }

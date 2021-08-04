@@ -1,4 +1,4 @@
-import {getHeroeById} from './bases/08-imp-exp';
+import {getHeroeById} from './08-imp-exp';
 //const promesa = new Promise((resolve, reject)=>{
 
 //    setTimeout(()=>{
@@ -13,7 +13,7 @@ import {getHeroeById} from './bases/08-imp-exp';
 //})
 //.catch(err => console.warn(err));
 
-const getHeroeByIdAsync = (id) => {
+export const getHeroeByIdAsync = (id) => {
     
 return new Promise((resolve, reject)=>{
 
@@ -26,7 +26,7 @@ return new Promise((resolve, reject)=>{
         }
        
 
-    },2000)
+    },1500)
 });
 //return promesa;
 }
